@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		04CF357677170EC83B7B3ED2 /* ToolCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A43ADA1CEB63BB7BE4EB50 /* ToolCallView.swift */; };
 		30FF135F5D795C73EA2E5967 /* ToolCallFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D8C15FAFA0C797912BBCF8 /* ToolCallFeature.swift */; };
 		37D16DF6228B3651C43A9427 /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9DE5D1278BFF013F7F8C5C /* AppFeature.swift */; };
+		5297CE982B776CF6C2B45E3E /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3749D1E5258562B54530ECF /* AboutView.swift */; };
 		7144170A3F5E4451E71E8BF8 /* ToolListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD812F1D3F99B3D459FAE85 /* ToolListFeature.swift */; };
 		7E2B872BE94EE4E6CB02F13D /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9577D41EC2A03A19EB875631 /* AppView.swift */; };
 		8F0DFBC570918CB978D48A05 /* ToolListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816ADD28EDD61B55CFD37E2C /* ToolListView.swift */; };
@@ -20,12 +21,13 @@
 /* Begin PBXFileReference section */
 		05A43ADA1CEB63BB7BE4EB50 /* ToolCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolCallView.swift; sourceTree = "<group>"; };
 		1A6E6F0A9DDA109CB15334ED /* XcodeMCPSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeMCPSwiftApp.swift; sourceTree = "<group>"; };
-		36FE855FD7F1FC8DC4436753 /* XcodeMCPSwiftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeMCPSwiftApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36FE855FD7F1FC8DC4436753 /* XcodeMCPSwiftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = XcodeMCPSwiftApp.app; path = "Xcode MCP Swift App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A9DE5D1278BFF013F7F8C5C /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
 		7BD812F1D3F99B3D459FAE85 /* ToolListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolListFeature.swift; sourceTree = "<group>"; };
 		816ADD28EDD61B55CFD37E2C /* ToolListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolListView.swift; sourceTree = "<group>"; };
 		9577D41EC2A03A19EB875631 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		A4D8C15FAFA0C797912BBCF8 /* ToolCallFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolCallFeature.swift; sourceTree = "<group>"; };
+		E3749D1E5258562B54530ECF /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		F38B9CF359D11586BAA80C0E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E3749D1E5258562B54530ECF /* AboutView.swift */,
 				9577D41EC2A03A19EB875631 /* AppView.swift */,
 				05A43ADA1CEB63BB7BE4EB50 /* ToolCallView.swift */,
 				816ADD28EDD61B55CFD37E2C /* ToolListView.swift */,
@@ -103,6 +106,7 @@
 			buildPhases = (
 				B84BCA3C28D19FCFB402812A /* Sources */,
 				8C403AB55025118E0FA07904 /* Embed MCPBridgeCLI */,
+				8714E7B1528989F2CB3D35D1 /* Resources */,
 				0842C5DB891F7065323EDF8C /* Frameworks */,
 			);
 			buildRules = (
@@ -145,7 +149,6 @@
 			packageReferences = (
 				D05750393314D2107B515250 /* XCRemoteSwiftPackageReference "XcodeMCPBridge" */,
 			);
-			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -153,6 +156,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8714E7B1528989F2CB3D35D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		8C403AB55025118E0FA07904 /* Embed MCPBridgeCLI */ = {
@@ -182,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5297CE982B776CF6C2B45E3E /* AboutView.swift in Sources */,
 				37D16DF6228B3651C43A9427 /* AppFeature.swift in Sources */,
 				7E2B872BE94EE4E6CB02F13D /* AppView.swift in Sources */,
 				30FF135F5D795C73EA2E5967 /* ToolCallFeature.swift in Sources */,
@@ -197,7 +211,7 @@
 /* Begin PBXTargetDependency section */
 		196393D764CA88ACC37655A2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			productRef = "TEMP_23AE75E1-F5D1-4BA5-A775-34FBA5DAD42F" /* mcpbridge-cli */;
+			productRef = "TEMP_BB29363F-19B1-4694-A9AE-23AF2CBE645A" /* mcpbridge-cli */;
 		};
 /* End PBXTargetDependency section */
 
@@ -331,7 +345,7 @@
 				ENABLE_APP_SANDBOX = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Anton Gregorn. All rights reserved.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -355,7 +369,7 @@
 				ENABLE_APP_SANDBOX = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Anton Gregorn. All rights reserved.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -409,7 +423,7 @@
 			package = D05750393314D2107B515250 /* XCRemoteSwiftPackageReference "XcodeMCPBridge" */;
 			productName = XcodeMCPBridge;
 		};
-		"TEMP_23AE75E1-F5D1-4BA5-A775-34FBA5DAD42F" /* mcpbridge-cli */ = {
+		"TEMP_BB29363F-19B1-4694-A9AE-23AF2CBE645A" /* mcpbridge-cli */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D05750393314D2107B515250 /* XCRemoteSwiftPackageReference "XcodeMCPBridge" */;
 			productName = "mcpbridge-cli";

@@ -44,7 +44,7 @@ targets:
         CURRENT_PROJECT_VERSION: 1
         GENERATE_INFOPLIST_FILE: YES
         INFOPLIST_KEY_LSApplicationCategoryType: "public.app-category.developer-tools"
-        INFOPLIST_KEY_NSHumanReadableCopyright: "Copyright © 2026"
+        INFOPLIST_KEY_NSHumanReadableCopyright: "Copyright © 2026 Anton Gregorn. All rights reserved."
         MACOSX_DEPLOYMENT_TARGET: "14.0"
         SWIFT_VERSION: "5.9"
         CODE_SIGN_STYLE: Automatic

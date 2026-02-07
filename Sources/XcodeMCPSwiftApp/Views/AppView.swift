@@ -62,6 +62,9 @@ private struct SidebarView: View {
 
                 Label("Settings", systemImage: "gear")
                     .tag(AppFeature.State.Tab.settings)
+
+                Label("About", systemImage: "info.circle")
+                    .tag(AppFeature.State.Tab.about)
             }
         }
         .listStyle(.sidebar)
@@ -80,6 +83,8 @@ private struct DetailView: View {
             ToolsPanel(store: store)
         case .settings:
             SettingsPanel(store: store.scope(state: \.bridge, action: \.bridge))
+        case .about:
+            AboutView()
         }
     }
 }
@@ -119,6 +124,8 @@ private struct ConnectionIndicator: View {
                 .font(.caption)
                 .foregroundStyle(.secondary)
         }
+        .padding(.horizontal, 10)
+        .padding(.vertical, 4)
     }
 }
 

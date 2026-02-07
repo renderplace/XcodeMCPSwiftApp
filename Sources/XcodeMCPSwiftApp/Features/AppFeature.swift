@@ -124,6 +124,7 @@ struct AppFeature {
         enum Tab: String, CaseIterable, Equatable {
             case tools = "Tools"
             case settings = "Settings"
+            case about = "About"
         }
     }
 
