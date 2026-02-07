@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04CF357677170EC83B7B3ED2 /* ToolCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A43ADA1CEB63BB7BE4EB50 /* ToolCallView.swift */; };
+		2FCDC069DA3038C870F022FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D84565551759424EC22412C9 /* Assets.xcassets */; };
 		30FF135F5D795C73EA2E5967 /* ToolCallFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D8C15FAFA0C797912BBCF8 /* ToolCallFeature.swift */; };
 		37D16DF6228B3651C43A9427 /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9DE5D1278BFF013F7F8C5C /* AppFeature.swift */; };
 		5297CE982B776CF6C2B45E3E /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3749D1E5258562B54530ECF /* AboutView.swift */; };
@@ -21,12 +22,13 @@
 /* Begin PBXFileReference section */
 		05A43ADA1CEB63BB7BE4EB50 /* ToolCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolCallView.swift; sourceTree = "<group>"; };
 		1A6E6F0A9DDA109CB15334ED /* XcodeMCPSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeMCPSwiftApp.swift; sourceTree = "<group>"; };
-		36FE855FD7F1FC8DC4436753 /* XcodeMCPSwiftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = XcodeMCPSwiftApp.app; path = "Xcode MCP Swift App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36FE855FD7F1FC8DC4436753 /* Xcode MCP Swift App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xcode MCP Swift App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A9DE5D1278BFF013F7F8C5C /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
 		7BD812F1D3F99B3D459FAE85 /* ToolListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolListFeature.swift; sourceTree = "<group>"; };
 		816ADD28EDD61B55CFD37E2C /* ToolListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolListView.swift; sourceTree = "<group>"; };
 		9577D41EC2A03A19EB875631 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		A4D8C15FAFA0C797912BBCF8 /* ToolCallFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolCallFeature.swift; sourceTree = "<group>"; };
+		D84565551759424EC22412C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3749D1E5258562B54530ECF /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,6 +49,7 @@
 			children = (
 				8E23DF171AF01743123AD16E /* Features */,
 				F38B9CF359D11586BAA80C0E /* Views */,
+				D84565551759424EC22412C9 /* Assets.xcassets */,
 				1A6E6F0A9DDA109CB15334ED /* XcodeMCPSwiftApp.swift */,
 			);
 			path = XcodeMCPSwiftApp;
@@ -55,7 +58,7 @@
 		2C4200CEB58A2B3359D6047D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				36FE855FD7F1FC8DC4436753 /* XcodeMCPSwiftApp.app */,
+				36FE855FD7F1FC8DC4436753 /* Xcode MCP Swift App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,7 +122,7 @@
 				DB6CCBAFB9CC857CD8EE44BC /* XcodeMCPBridge */,
 			);
 			productName = XcodeMCPSwiftApp;
-			productReference = 36FE855FD7F1FC8DC4436753 /* XcodeMCPSwiftApp.app */;
+			productReference = 36FE855FD7F1FC8DC4436753 /* Xcode MCP Swift App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -162,6 +165,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FCDC069DA3038C870F022FD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +215,7 @@
 /* Begin PBXTargetDependency section */
 		196393D764CA88ACC37655A2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			productRef = "TEMP_BB29363F-19B1-4694-A9AE-23AF2CBE645A" /* mcpbridge-cli */;
+			productRef = "TEMP_8847B9EE-8160-4905-B365-0C72C2414B34" /* mcpbridge-cli */;
 		};
 /* End PBXTargetDependency section */
 
@@ -339,6 +343,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -363,6 +368,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -423,7 +429,7 @@
 			package = D05750393314D2107B515250 /* XCRemoteSwiftPackageReference "XcodeMCPBridge" */;
 			productName = XcodeMCPBridge;
 		};
-		"TEMP_BB29363F-19B1-4694-A9AE-23AF2CBE645A" /* mcpbridge-cli */ = {
+		"TEMP_8847B9EE-8160-4905-B365-0C72C2414B34" /* mcpbridge-cli */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D05750393314D2107B515250 /* XCRemoteSwiftPackageReference "XcodeMCPBridge" */;
 			productName = "mcpbridge-cli";

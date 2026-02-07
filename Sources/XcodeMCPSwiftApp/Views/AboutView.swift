@@ -35,7 +35,7 @@ struct AboutView: View {
             Spacer()
 
             // App Icon
-            Image("AppIcon")
+            Image("AppLogo")
                 .resizable()
                 .frame(width: 128, height: 128)
                 .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
