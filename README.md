@@ -35,8 +35,14 @@ This app depends on the [XcodeMCPBridge](https://github.com/renderplace/XcodeMCP
 - **macOS 14.0+**
 - **Xcode 26.3** (with MCP enabled in Settings → Intelligence → "Enable Model Context Protocol")
 - **A project must be open in Xcode** for the bridge to work
+
 - Swift 5.9+
 - [XcodeGen](https://github.com/yonaskolb/XcodeGen) (`brew install xcodegen`)
+
+
+**Note:** Xcode MCP Tools must be enabled under the **Intelligence** settings in Xcode for the app to work correctly.
+
+![Xcode Intelligence settings](assets/xcode_settings.png)
 
 ## Building
 
