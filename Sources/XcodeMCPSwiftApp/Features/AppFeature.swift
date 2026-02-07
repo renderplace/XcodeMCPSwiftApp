@@ -44,7 +44,28 @@ struct XcodeWindowTab: Equatable, Identifiable, Sendable {
     }
 
     /// Parse XcodeListWindows tool output into tab entries.
+    ///
+    /// Handles both JSON responses and plain-text key-value output from the tool.
     static func parse(from text: String) -> [XcodeWindowTab] {
+        // Try JSON decoding first
+        if let data = text.data(using: .utf8),
+           let json = try? JSONSerialization.jsonObject(with: data) {
+            let entries: [[String: Any]]?
+            if let dict = json as? [String: Any] {
+                entries = dict["windows"] as? [[String: Any]]
+            } else {
+                entries = json as? [[String: Any]]
+            }
+            if let entries, !entries.isEmpty {
+                return entries.compactMap { entry in
+                    guard let tabId = entry["tabIdentifier"] as? String, !tabId.isEmpty else { return nil }
+                    let wsPath = entry["workspacePath"] as? String ?? "Unknown"
+                    return XcodeWindowTab(tabIdentifier: tabId, workspacePath: wsPath)
+                }
+            }
+        }
+
+        // Fallback: plain-text line parsing (strip quotes, braces, trailing JSON artifacts)
         var results: [XcodeWindowTab] = []
         for line in text.components(separatedBy: .newlines) {
             let trimmed = line.trimmingCharacters(in: .whitespaces)
@@ -54,21 +75,10 @@ struct XcodeWindowTab: Equatable, Identifiable, Sendable {
             var wsPath: String?
 
             if let range = trimmed.range(of: "tabIdentifier:") {
-                let after = trimmed[range.upperBound...].trimmingCharacters(in: .whitespaces)
-                if let commaIdx = after.firstIndex(of: ",") {
-                    tabId = String(after[after.startIndex..<commaIdx]).trimmingCharacters(in: .whitespaces)
-                } else {
-                    tabId = after.trimmingCharacters(in: .whitespaces)
-                }
+                tabId = extractValue(from: trimmed, after: range)
             }
-
             if let range = trimmed.range(of: "workspacePath:") {
-                let after = trimmed[range.upperBound...].trimmingCharacters(in: .whitespaces)
-                if let commaIdx = after.firstIndex(of: ",") {
-                    wsPath = String(after[after.startIndex..<commaIdx]).trimmingCharacters(in: .whitespaces)
-                } else {
-                    wsPath = after.trimmingCharacters(in: .whitespaces)
-                }
+                wsPath = extractValue(from: trimmed, after: range)
             }
 
             if let tabId, !tabId.isEmpty {
@@ -79,6 +89,23 @@ struct XcodeWindowTab: Equatable, Identifiable, Sendable {
             }
         }
         return results
+    }
+
+    /// Extracts a clean value from a key-value pair in text output,
+    /// stripping quotes, braces, brackets, and other JSON artifacts.
+    private static func extractValue(from text: String, after range: Range<String.Index>) -> String {
+        let after = text[range.upperBound...].trimmingCharacters(in: .whitespaces)
+        let value: String
+        if let commaIdx = after.firstIndex(of: ",") {
+            value = String(after[after.startIndex..<commaIdx])
+        } else {
+            value = after
+        }
+        return value
+            .trimmingCharacters(in: .whitespaces)
+            .trimmingCharacters(in: CharacterSet(charactersIn: "\"{}[]\n\r"))
+            .replacingOccurrences(of: "\\n", with: "")
+            .trimmingCharacters(in: .whitespaces)
     }
 }
 
