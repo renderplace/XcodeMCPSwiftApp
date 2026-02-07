@@ -88,6 +88,7 @@ Sources/
     │   └── ToolCallFeature.swift       # Tool execution with parameters
     ├── Views/
     │   ├── AppView.swift               # Main window, sidebar, settings
+    │   ├── AboutView.swift             # About screen
     │   ├── ToolListView.swift          # Tool list with search
     │   └── ToolCallView.swift          # Dynamic parameter form + results
     └── Services/
