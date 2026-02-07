@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04CF357677170EC83B7B3ED2 /* ToolCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A43ADA1CEB63BB7BE4EB50 /* ToolCallView.swift */; };
+		30FF135F5D795C73EA2E5967 /* ToolCallFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D8C15FAFA0C797912BBCF8 /* ToolCallFeature.swift */; };
+		37D16DF6228B3651C43A9427 /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9DE5D1278BFF013F7F8C5C /* AppFeature.swift */; };
+		7144170A3F5E4451E71E8BF8 /* ToolListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD812F1D3F99B3D459FAE85 /* ToolListFeature.swift */; };
+		7E2B872BE94EE4E6CB02F13D /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9577D41EC2A03A19EB875631 /* AppView.swift */; };
+		8F0DFBC570918CB978D48A05 /* ToolListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816ADD28EDD61B55CFD37E2C /* ToolListView.swift */; };
+		BC33C8521CA30A8E3CB85937 /* XcodeMCPBridge in Frameworks */ = {isa = PBXBuildFile; productRef = DB6CCBAFB9CC857CD8EE44BC /* XcodeMCPBridge */; };
+		C80EED58A5196EA7351C5A28 /* XcodeMCPSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E6F0A9DDA109CB15334ED /* XcodeMCPSwiftApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05A43ADA1CEB63BB7BE4EB50 /* ToolCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolCallView.swift; sourceTree = "<group>"; };
+		1A6E6F0A9DDA109CB15334ED /* XcodeMCPSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeMCPSwiftApp.swift; sourceTree = "<group>"; };
+		36FE855FD7F1FC8DC4436753 /* XcodeMCPSwiftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeMCPSwiftApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A9DE5D1278BFF013F7F8C5C /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
+		7BD812F1D3F99B3D459FAE85 /* ToolListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolListFeature.swift; sourceTree = "<group>"; };
+		816ADD28EDD61B55CFD37E2C /* ToolListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolListView.swift; sourceTree = "<group>"; };
+		9577D41EC2A03A19EB875631 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		A4D8C15FAFA0C797912BBCF8 /* ToolCallFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolCallFeature.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0842C5DB891F7065323EDF8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC33C8521CA30A8E3CB85937 /* XcodeMCPBridge in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2005CCECB397FC5F743EC1AD /* XcodeMCPSwiftApp */ = {
+			isa = PBXGroup;
+			children = (
+				8E23DF171AF01743123AD16E /* Features */,
+				F38B9CF359D11586BAA80C0E /* Views */,
+				1A6E6F0A9DDA109CB15334ED /* XcodeMCPSwiftApp.swift */,
+			);
+			path = XcodeMCPSwiftApp;
+			sourceTree = "<group>";
+		};
+		2C4200CEB58A2B3359D6047D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36FE855FD7F1FC8DC4436753 /* XcodeMCPSwiftApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E23DF171AF01743123AD16E /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				4A9DE5D1278BFF013F7F8C5C /* AppFeature.swift */,
+				A4D8C15FAFA0C797912BBCF8 /* ToolCallFeature.swift */,
+				7BD812F1D3F99B3D459FAE85 /* ToolListFeature.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		D370F1BA03B8ADFB8E3307D7 = {
+			isa = PBXGroup;
+			children = (
+				DD71B3742D57422C6E488453 /* Sources */,
+				2C4200CEB58A2B3359D6047D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD71B3742D57422C6E488453 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2005CCECB397FC5F743EC1AD /* XcodeMCPSwiftApp */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F38B9CF359D11586BAA80C0E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9577D41EC2A03A19EB875631 /* AppView.swift */,
+				05A43ADA1CEB63BB7BE4EB50 /* ToolCallView.swift */,
+				816ADD28EDD61B55CFD37E2C /* ToolListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CED7FDCA6E3ACF59B662A5F0 /* XcodeMCPSwiftApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4550384419B18BD04829DDA /* Build configuration list for PBXNativeTarget "XcodeMCPSwiftApp" */;
+			buildPhases = (
+				B84BCA3C28D19FCFB402812A /* Sources */,
+				8C403AB55025118E0FA07904 /* Embed MCPBridgeCLI */,
+				0842C5DB891F7065323EDF8C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				196393D764CA88ACC37655A2 /* PBXTargetDependency */,
+			);
+			name = XcodeMCPSwiftApp;
+			packageProductDependencies = (
+				DB6CCBAFB9CC857CD8EE44BC /* XcodeMCPBridge */,
+			);
+			productName = XcodeMCPSwiftApp;
+			productReference = 36FE855FD7F1FC8DC4436753 /* XcodeMCPSwiftApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		008C7778446C1C3359444360 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					CED7FDCA6E3ACF59B662A5F0 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4726F6B43EFBC79B0AB63B8C /* Build configuration list for PBXProject "XcodeMCPSwiftApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = D370F1BA03B8ADFB8E3307D7;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D05750393314D2107B515250 /* XCRemoteSwiftPackageReference "XcodeMCPBridge" */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CED7FDCA6E3ACF59B662A5F0 /* XcodeMCPSwiftApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8C403AB55025118E0FA07904 /* Embed MCPBridgeCLI */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/mcpbridge-cli",
+			);
+			name = "Embed MCPBridgeCLI";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(PRODUCT_NAME).app/Contents/Resources/mcpbridge-cli",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Contents/Resources\"\ncp \"${BUILT_PRODUCTS_DIR}/mcpbridge-cli\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Contents/Resources/mcpbridge-cli\"\nchmod 755 \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Contents/Resources/mcpbridge-cli\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B84BCA3C28D19FCFB402812A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37D16DF6228B3651C43A9427 /* AppFeature.swift in Sources */,
+				7E2B872BE94EE4E6CB02F13D /* AppView.swift in Sources */,
+				30FF135F5D795C73EA2E5967 /* ToolCallFeature.swift in Sources */,
+				04CF357677170EC83B7B3ED2 /* ToolCallView.swift in Sources */,
+				7144170A3F5E4451E71E8BF8 /* ToolListFeature.swift in Sources */,
+				8F0DFBC570918CB978D48A05 /* ToolListView.swift in Sources */,
+				C80EED58A5196EA7351C5A28 /* XcodeMCPSwiftApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		196393D764CA88ACC37655A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = "TEMP_23AE75E1-F5D1-4BA5-A775-34FBA5DAD42F" /* mcpbridge-cli */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		52690B276CE9B464B532A9A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		7D72F7BFDE286EF04BEE7EB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		95F7F8231C27725B93D43333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xcodemcpswiftapp.app;
+				PRODUCT_NAME = "Xcode MCP Swift App";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		BDD3925D3D8691F42DBEF080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xcodemcpswiftapp.app;
+				PRODUCT_NAME = "Xcode MCP Swift App";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4726F6B43EFBC79B0AB63B8C /* Build configuration list for PBXProject "XcodeMCPSwiftApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D72F7BFDE286EF04BEE7EB1 /* Debug */,
+				52690B276CE9B464B532A9A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A4550384419B18BD04829DDA /* Build configuration list for PBXNativeTarget "XcodeMCPSwiftApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD3925D3D8691F42DBEF080 /* Debug */,
+				95F7F8231C27725B93D43333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D05750393314D2107B515250 /* XCRemoteSwiftPackageReference "XcodeMCPBridge" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/renderplace/XcodeMCPBridge.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB6CCBAFB9CC857CD8EE44BC /* XcodeMCPBridge */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D05750393314D2107B515250 /* XCRemoteSwiftPackageReference "XcodeMCPBridge" */;
+			productName = XcodeMCPBridge;
+		};
+		"TEMP_23AE75E1-F5D1-4BA5-A775-34FBA5DAD42F" /* mcpbridge-cli */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D05750393314D2107B515250 /* XCRemoteSwiftPackageReference "XcodeMCPBridge" */;
+			productName = "mcpbridge-cli";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 008C7778446C1C3359444360 /* Project object */;
+}
